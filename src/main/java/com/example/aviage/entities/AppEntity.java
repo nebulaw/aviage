@@ -21,7 +21,7 @@ public abstract class AppEntity {
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "CREATE_DATE", updatable = false)
     @JsonIgnore
-    protected Date createDate;
+    protected Date createDate = new Date();
 
     @LastModifiedDate
     @Temporal(TemporalType.TIMESTAMP)
